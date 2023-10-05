@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   schedule:
     # Runs at 00:00 each sunday
-    - cron: '* * * * *'
+    - cron: 0 0 * * 0'
 
 jobs:
   update-readme:
