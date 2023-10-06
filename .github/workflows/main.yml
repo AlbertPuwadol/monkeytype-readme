@@ -21,8 +21,8 @@ jobs:
           # required:
           github_token: ${{ secrets.API_TOKEN_GITHUB }}
           monkeytype_api_key: ${{ secrets.MONKEYTYPE_API_KEY }}
-          mode: 'words'
-          mode2: '10'
+          mode: 'time'
+          mode2: '30'
           # not required with default:
           style: 'for-the-badge' # option from shields.io
           logoVariant: 'two'
