@@ -20,6 +20,8 @@ export async function updateReadme(input: Input, badgeUrl: string) {
     throw new BadgeResourceDeclarationNotFoundError('No monkeytype.badge resource declaration (`[monkeytype.badge]: ...`) was found in README.md. Please check documentation for setup instruction.');
   }
 
+  core.info(badgeResource, newBadgeResource)
+
   if (badgeResource.includes(newBadgeResource)) {
     core.info('Badge content is still the same. Skipping update...');
   } else {
