@@ -19,6 +19,7 @@ jobs:
       - uses: AlbertPuwadol/monkeytype-readme@main
         with:
           # required:
+          github_token: ${{ secrets.API_TOKEN_GITHUB }}
           monkeytype_api_key: ${{ secrets.MONKEYTYPE_API_KEY }}
           mode: 'time'
           mode2: '30'
