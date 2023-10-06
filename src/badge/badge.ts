@@ -19,7 +19,7 @@ export async function getWpm(input: Input) {
   });
   const { data } = await response.json();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const wpm = data?.[0].wpm;
+  const wpm = data?.[0]?.wpm;
   if (!wpm) throw new MonkeytypePersonalBestNotFoundError('No personal best found with provided mode');
   return Math.round(wpm as number);
 }
