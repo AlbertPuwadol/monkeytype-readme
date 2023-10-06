@@ -13,6 +13,7 @@
     "baseUrl": ".",
     "outDir": "build",
     "esModuleInterop": true,
-    "paths": {}
+    "paths": {},
+    "skipLibCheck": true
   }
 }
