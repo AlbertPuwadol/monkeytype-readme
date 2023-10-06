@@ -32,6 +32,10 @@ inputs:
     description: 'The shields.io label to use'
     default: 'monkeytype'
     required: false
+  repo:
+    description: 'repository name to store the badge'
+    default: 'monkeytype-readme'
+    required: false
 outputs:
   badge_url:
     description: 'The shields.io badge url'
