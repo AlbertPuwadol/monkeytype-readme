@@ -35,8 +35,8 @@ export async function updateReadme(input: Input, badgeUrl: string) {
       content: Buffer.from(content).toString('base64'),
       sha: readme.data.sha,
       committer: {
-        name: owner,
-        email: 'alpe_panda@hotmail.co.th',
+        name: 'monkeytype-badge-bot',
+        email: 'github-actions@github.com',
       },
     });
     core.info('Readme updated');
