@@ -325,6 +325,7 @@ function main() {
         try {
             core.info('Parsing action input...');
             const input = (0, input_1.parse)();
+            core.info(`Input parsed ${JSON.stringify(input)}`);
             core.info('Getting badge URL...');
             const badgeUrl = yield (0, badge_1.getBadgeUrl)(input);
             core.info('Updating readme with new badge resource declaration...');

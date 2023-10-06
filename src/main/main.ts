@@ -8,6 +8,7 @@ export async function main() {
   try {
     core.info('Parsing action input...');
     const input = parse();
+    core.info(`Input parsed ${JSON.stringify(input)}`);
 
     core.info('Getting badge URL...');
     const badgeUrl = await getBadgeUrl(input);
