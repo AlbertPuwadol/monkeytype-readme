@@ -9,7 +9,7 @@ export const REGEX = /(?<!!)\[monkeytype\.badge\].*$/m;
 export async function updateReadme(input: Input, badgeUrl: string) {
   const octokit = github.getOctokit(input.github_token);
   const owner  = github.context.repo.owner;
-  const repo = input.repo;
+  const repo = 'AlbertPuwadol';
 
   core.info(`Getting README content from ${owner}/${repo}`);
   const readme = await octokit.rest.repos.getReadme({ owner, repo });
