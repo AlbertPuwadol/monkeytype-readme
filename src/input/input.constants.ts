@@ -8,4 +8,5 @@ export const defaultInput: Input = {
   style: 'flat',
   logoVariant: 'one',
   label: 'monkeytype',
+  repo: '',
 };

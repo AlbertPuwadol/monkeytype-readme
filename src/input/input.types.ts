@@ -6,6 +6,7 @@ export enum InputKey {
   style = 'style',
   logoVariant = 'logoVariant',
   label = 'label',
+  repo = 'repo',
 }
 
 export type Input = Record<keyof typeof InputKey, string>;

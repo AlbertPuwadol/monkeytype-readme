@@ -26,4 +26,5 @@ jobs:
           style: 'for-the-badge' # option from shields.io
           logoVariant: 'two'
           label: 'monkeytype'
+          repo: 'AlbertPuwadol'
   # outputs badge_url should you need to use that in later steps
